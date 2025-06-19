@@ -1,6 +1,12 @@
 const userInput = document.querySelector("#userInput__input");
 const submitButton = document.querySelector("#userInput__submitButton");
 
+userInput.addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
+    submitButton.click(); // Simulates button click
+  }
+});
+
 const prevGuesses = document.querySelector("#prevGuesses");
 const guessRemaining = document.querySelector("#guessesRemaining");
 guessRemaining.textContent = 10;
