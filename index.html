@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="RYEmber07" />
+    <meta
+      name="description"
+      content="Guess The Number is a simple game where the player tries to guess a randomly chosen number within a certain range, using hints like 'Too high' or 'Too low' after each guess." />
+    <title>Guess The Number</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&display=swap"
+      rel="stylesheet" />
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js" defer></script>
+    <script src="js/particles-init.js" defer></script>
+    <script src="js/gameLogic.js" defer></script>
+  </head>
+  <body>
+    <div id="particles-js"></div>
+
+    <div class="game-card">
+      <header class="header">
+        <h1 class="header__h1">Guess The Number</h1>
+
+        <h2 class="instructions-title">Instructions</h2>
+
+        <section class="header__instructions">
+          <div class="card">
+            <div class="card__emoji">🎯</div>
+            <p class="card__text">Try and guess a number between 1 and 100.</p>
+          </div>
+          <div class="card">
+            <div class="card__emoji">🧠</div>
+            <p class="card__text">You have 10 attempts to guess the number.</p>
+          </div>
+          <div class="card">
+            <div class="card__emoji">🔍</div>
+            <p class="card__text">
+              Each guess will tell you if it's too high or too low.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card__emoji">🍀</div>
+            <p class="card__text">Good luck and have fun!</p>
+          </div>
+        </section>
+      </header>
+
+      <main>
+        <section class="userInput">
+          <label id="userInput__label" for="userInput__input"
+            >Enter Your Guess Here</label
+          >
+          <input type="text" id="userInput__input" />
+          <button type="button" id="userInput__submitButton">
+            Submit Guess
+          </button>
+        </section>
+        <section class="displayResult">
+          <div>Previous Guesses : <span id="prevGuesses"></span></div>
+          <div>Guesses Remaining : <span id="guessesRemaining"></span></div>
+          <div id="showOutcome"></div>
+          <div id="newGame"></div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p>🎮 Thanks for playing!</p>
+      </footer>
+    </div>
+  </body>
+</html>
