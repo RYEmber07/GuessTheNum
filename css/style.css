@@ -42,6 +42,7 @@ body {
 
 /* Glassmorphic game card */
 .game-card {
+  margin: 2rem;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 20px;
   padding: 2rem;
@@ -179,6 +180,10 @@ main {
 
 /* Label */
 #userInput__label {
+  font-weight: bolder;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  word-spacing: 2px;
   color: #ffd700;
   font-size: 1.3rem;
 }
