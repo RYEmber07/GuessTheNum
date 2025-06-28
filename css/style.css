@@ -214,6 +214,10 @@ main {
   line-height: 1.6;
 }
 
+.displayResult__show{
+  text-align: left;
+}
+
 .displayResult span {
   font-weight: bold;
   color: #ffdf00;
